@@ -16,23 +16,79 @@
             background-color: #0000FF; /* Blue background */
             color: white;
             font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scrolling */
+            position: relative; /* To place the background character */
         }
+
+        /* Floating and color-changing animation for "mo9i3 zre9" */
         h1 {
             font-size: 3rem;
             text-align: center;
+            position: absolute;
+            animation: floatAndColorChange 10s ease-in-out infinite;
         }
+
+        /* Keyframes for floating and color change */
+        @keyframes floatAndColorChange {
+            0% {
+                top: 10%;
+                left: 10%;
+                color: #FF6347; /* Tomato */
+            }
+            25% {
+                top: 20%;
+                left: 40%;
+                color: #32CD32; /* Lime Green */
+            }
+            50% {
+                top: 40%;
+                left: 70%;
+                color: #1E90FF; /* Dodger Blue */
+            }
+            75% {
+                top: 60%;
+                left: 30%;
+                color: #FFD700; /* Gold */
+            }
+            100% {
+                top: 80%;
+                left: 50%;
+                color: #FF4500; /* Orange Red */
+            }
+        }
+
         .footer {
             position: absolute;
             bottom: 10px;
             font-size: 1rem;
             text-align: center;
         }
+
+        /* Style for the GIF */
+        .gif-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .gif-container img {
+            width: 200px; /* Adjust size as needed */
+        }
     </style>
 </head>
 <body>
+    <!-- Add your GIF here -->
+    <div class="gif-container">
+        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGE1cDE1NzFlemR3NDF6bGQ3MmlnY3k2N2FwejZ5dmhsaTFoY2NiZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f9RYbnwXii5yAulbN1/giphy.gif">
+    </div>
+
     <h1>mo9i3 zre9 :)</h1>
     <div class="footer">Made by Mr Amine</div>
 </body>
 </html>
+
+
+
 
 
